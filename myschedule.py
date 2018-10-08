@@ -1,10 +1,10 @@
 import schedule
 import time
-from datetime import datetime
-import requests
-import os
 
 def job():
+    from datetime import datetime
+    import os
+
     print("於{}開始抓取資料".format(datetime.now()))
     load()
     print("於{}結束抓取資料\n".format(datetime.now()))
