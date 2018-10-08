@@ -10,7 +10,7 @@ def job():
     print("於{}結束抓取資料\n".format(datetime.now()))
     os.system("git add .")
     os.system("git commit -m \"更新於{}\"".format(datetime.now()))
-    os.system("git push heroku master")
+    os.system("git push -f git@github.com/Benjamin1021523/periodically-get-TWweather.git master")
     os.system("git reset HEAD~1")
 
 def load():
